@@ -31,7 +31,7 @@ const Login = () => {
       if (data.user.role === "admin") {
         navigate("/Sidebar");
       } else {
-        navigate("/MyAccountDashboard");
+        navigate("/NotFound");
       }
     } catch (error) {
       alert(error.response?.data?.message || "Login Failed");

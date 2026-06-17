@@ -46,7 +46,7 @@ const CategoryAdd = () => {
   };
   return (
     <>
-      <div className="space-y-6 mt-5 ml-64 ">
+      <div className="space-y-6 mt-2 ml-64 ">
         {/* Add Category Form */}
         <Card className="max-w-md">
           <CardHeader>
