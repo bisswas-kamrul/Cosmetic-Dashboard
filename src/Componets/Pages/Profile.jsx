@@ -128,12 +128,9 @@ const Profile = () => {
         },
       );
 
-      const updatedUser = res.data.user ||
-        res.data.data || {
-          ...profile,
-          ...formValues,
-        };
+      const updatedUser = res.data.user;
       setProfile(updatedUser);
+      setAvatarPreview(updatedUser.avatar);
       setFormValues({
         name: updatedUser.name || "",
         lastName: updatedUser.lastName || "",
