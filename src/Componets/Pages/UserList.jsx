@@ -50,6 +50,7 @@ const UserList = () => {
                 <th className="border p-2">Name</th>
                 <th className="border p-2">LastName</th>
                 <th className="border p-2">Email</th>
+                <th className="border p-2">Role</th>
                 <th className="border p-2">Action</th>
               </tr>
             </thead>
@@ -61,6 +62,7 @@ const UserList = () => {
                   <td className="border p-2">{user.name}</td>
                   <td className="border p-2">{user.lastName}</td>
                   <td className="border p-2">{user.email}</td>
+                  <td className="border p-2">{user.role}</td>
                   <td className="border p-2">
                     <button
                       onClick={() => handleDelete(user._id)}
