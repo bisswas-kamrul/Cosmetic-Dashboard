@@ -62,11 +62,14 @@ const AiSettings = () => {
         <div>
           <h1 className="text-3xl font-bold">AI Assistant Settings</h1>
           <p className="text-gray-500 dark:text-gray-400">
-            Control the website chatbot behavior, welcome text, and suggested questions.
+            Control the website chatbot behavior, welcome text, and suggested
+            questions.
           </p>
         </div>
 
-        <form onSubmit={handleSave} className="space-y-6 rounded-3xl bg-white p-6 shadow-sm dark:bg-zinc-900">
+        <form
+          onSubmit={handleSave}
+          className="space-y-6 rounded-3xl bg-white p-6 shadow-sm dark:bg-zinc-900">
           <label className="flex items-center gap-3 rounded-2xl border border-gray-200 p-4 dark:border-zinc-700">
             <input
               type="checkbox"
@@ -105,7 +108,10 @@ const AiSettings = () => {
           </label>
 
           <div className="flex items-center justify-between">
-            <Button type="submit" className="bg-black text-white" disabled={saving}>
+            <Button
+              type="submit"
+              className="bg-black text-white"
+              disabled={saving}>
               {saving ? "Saving..." : "Save AI Settings"}
             </Button>
             <p className="text-sm text-gray-500 dark:text-gray-400">
