@@ -16,6 +16,7 @@ import {
   FaHeart,
   FaLock,
   FaCog,
+  FaRobot,
 } from "react-icons/fa";
 const Sidebar = () => {
   return (
@@ -109,6 +110,10 @@ const Sidebar = () => {
           <div className="p-2 rounded hover:bg-gray-800 flex items-center gap-3">
             <FaCog />
             <Link to="/Settings">Settings</Link>
+          </div>
+          <div className="p-2 rounded hover:bg-gray-800 flex items-center gap-3">
+            <FaRobot />
+            <Link to="/AiSettings">AI Settings</Link>
           </div>
         </nav>
       </aside>

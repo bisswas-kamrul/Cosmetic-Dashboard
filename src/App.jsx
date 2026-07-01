@@ -25,6 +25,7 @@ import Wishlist from "./Componets/Pages/Wishlist";
 import Notifications from "./Componets/Pages/Notifications";
 import Security from "./Componets/Pages/Security";
 import Settings from "./Componets/Pages/Settings";
+import AiSettings from "./Componets/Pages/AiSettings";
 import NotFound from "./Componets/Pages/NotFound";
 function App() {
   const adminPage = (children) => <ProtectedRoute>{children}</ProtectedRoute>;
@@ -59,6 +60,7 @@ function App() {
           <Route path="/Notifications" element={adminPage(<Notifications />)} />
           <Route path="/Security" element={adminPage(<Security />)} />
           <Route path="/Settings" element={adminPage(<Settings />)} />
+          <Route path="/AiSettings" element={adminPage(<AiSettings />)} />
           <Route path="/NotFound" element={adminPage(<NotFound />)} />
         </Route>
       </Routes>
